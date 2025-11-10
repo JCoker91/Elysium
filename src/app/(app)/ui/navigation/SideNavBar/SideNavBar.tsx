@@ -1,8 +1,8 @@
 "use client";
-import ThemeToggleButton from "@/app/(app)/ui/navigation/SideNavBar/components/ThemeToggleButton/ThemeToggleButton";
 import { Divider, Group, ScrollArea, Title } from "@mantine/core";
 import { IconBook, IconHome, IconUsers } from "@tabler/icons-react";
 import SideNavLink from "./components/SideNavLink/SideNavLink";
+import ThemeToggleButton from "./components/ThemeToggleButton/ThemeToggleButton";
 
 export default function SideNavBar() {
   return (
