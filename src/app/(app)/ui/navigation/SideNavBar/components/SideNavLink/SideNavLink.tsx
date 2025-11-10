@@ -15,8 +15,7 @@ export default function SideNavLink({ label, href, icon }: SideNavLinkProps) {
         </Box>
       }
       label={label}
-      // If in production mode, link to /Elysium/...
-      href={process.env.NODE_ENV === "development" ? href : `Elysium${href}`}
+      href={href}
     />
   );
 }
