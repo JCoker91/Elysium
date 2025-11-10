@@ -1,6 +1,11 @@
-import { createTheme } from "@mantine/core";
+import { createTheme, MantineThemeOverride } from "@mantine/core";
 
-const theme = createTheme({
+export const theme: MantineThemeOverride = createTheme({
+  fontFamily: "var(--font-geist-sans), sans-serif",
+  headings: { fontFamily: "var(--font-geist-sans), sans-serif" },
+  defaultRadius: "md",
+  primaryShade: { light: 6, dark: 8 },
+  components: {},
   breakpoints: {
     xs: "36em",
     sm: "48em",
@@ -8,20 +13,4 @@ const theme = createTheme({
     lg: "75em",
     xl: "88em",
   },
-  colors: {
-    brand: [
-      "#e6f7ff",
-      "#bae7ff",
-      "#91d5ff",
-      "#69c0ff",
-      "#40a9ff",
-      "#1890ff",
-      "#096dd9",
-      "#0050b3",
-      "#003a8c",
-      "#002766",
-    ],
-  },
 });
-
-export default theme;
