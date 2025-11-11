@@ -1,4 +1,5 @@
 import { Box, NavLink, ThemeIcon } from "@mantine/core";
+import Link from "next/link";
 
 export interface SideNavLinkProps {
   label: string;
@@ -9,6 +10,7 @@ export interface SideNavLinkProps {
 export default function SideNavLink({ label, href, icon }: SideNavLinkProps) {
   return (
     <NavLink
+      component={Link}
       leftSection={
         <Box>
           <ThemeIcon variant="light">{icon}</ThemeIcon>
